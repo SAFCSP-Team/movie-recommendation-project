@@ -1,17 +1,18 @@
-public class Movie {
+import java.util.*;
 
+class Movie {
     int id;
     String name;
-    int year;
     double rate;
+    int year;
     String genre;
 
-    Movie(int id, String name, int year, double rate, String genre){
+  
+    public Movie(int id, String name, double rate, int year, String genre) {
         this.id = id;
         this.name = name;
-        this.year = year;
         this.rate = rate;
-        this.genre = genre;
+        this.year = year;
+        this.genre = genre.toLowerCase();
     }
-    
 }
